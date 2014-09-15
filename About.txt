@@ -1,0 +1,5 @@
+... merupakan sebuah sistem pembangkit puisi otomatis untuk bahasa Indonesia. ... menggunakan pendekatan Constraint Satisfaction Problem untuk menghasilkan puisi. Rima, jumlah suku kata, dan jumlah baris merupakan beberapa bentuk aturan puisi (constraint) yang harus dipenuhi oleh ... dalam membuat puisi. Suatu artikel berita aktual tertentu akan menjadi inspirasi bagi ... untuk membuat sebuah puisi setiap harinya. ... akan mencari kata-kata yang merepresentasikan artikel berita tersebut, lalu mengkombinasikannya dengan kata-kata puitis sesuai dengan aturan tata bahasa Indonesia hingga menjadi untaian baris-baris puisi.
+
+Untuk mengetahui lebih jauh mengenai bagaimana ... membuat puisi, silakan membaca publikasi di bawah ini.
+
+Fam Rashel & Ruli Manurung. (2013). Poetry Generation for Bahasa Indonesia using a Constraint Satisfaction Approach. In Proceedings of International Conference on Advance Computer SCience and Information System (ICACSIS 2013), Bali, Indonesia.

@@ -1,0 +1,299 @@
+CONTOH ALUR KERJA PROGRAM
+
+TEMPLATE
+/nn dan /nn bisa dibawa /vbi
+template([nn, dan, nn, bisa, dibawa, vbi], 6, 3).
+/pr /vbi /pr /vbi
+template([pr, vbi, pr, vbi], 0, 4).
+
+SLOT FILLER
+word(aku, pr, [aa, k, oo], 2, filler).
+word(kau, pr, [k, aa, oo], 2, filler).
+
+word(senja, nn, [s, eu, n, j, aa], 2, keyword).
+word(kalbu, nn, [k, aa, l, b, oo], 2, filler).
+word(bayang, nn, [b, aa, y, aa, ng], 2, keyword).
+
+word(pergi, vbi, [p, eu, r, g, ee], 2, filler).
+word(kembali, vbi, [k, eu, m, b, aa, l, ee], 3, filler).
+word(menunggu, vbi, [m, eu, n, oo, ng, g, oo], 3, keyword).
+
+CONSTRAINT(S)
+-Puisi terdiri dari 2 baris
+-Baris 1 dan 2 memiliki rima
+-Baris 1 terdiri dari 6 kata dengan total 12 suku kata
+-Baris 2 terdiri dari 4 kata dengan total 10 suku kata
+-Penggunaan keyword minimal 40%
+
+
+COMBINATION-SENTENCE(S)
+Larik = [kalbu, dan, kalbu, bisa, dibawa, pergi],
+Suku kata = 12,
+Jumlah keyword = 0,
+Jumlah slot = 3 ;
+Larik = [kalbu, dan, kalbu, bisa, dibawa, kembali],
+Suku kata = 13,
+Jumlah keyword = 0,
+Jumlah slot = 3 ;
+Larik = [kalbu, dan, kalbu, bisa, dibawa, menunggu],
+Suku kata = 13,
+Jumlah keyword = 1,
+Jumlah slot = 3 ;
+Larik = [kalbu, dan, senja, bisa, dibawa, pergi],
+Suku kata = 12,
+Jumlah keyword = 1,
+Jumlah slot = 3 ;
+Larik = [kalbu, dan, senja, bisa, dibawa, kembali],
+Suku kata = 13,
+Jumlah keyword = 1,
+Jumlah slot = 3 ;
+Larik = [kalbu, dan, senja, bisa, dibawa, menunggu],
+Suku kata = 13,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [kalbu, dan, bayang, bisa, dibawa, pergi],
+Suku kata = 12,
+Jumlah keyword = 1,
+Jumlah slot = 3 ;
+Larik = [kalbu, dan, bayang, bisa, dibawa, kembali],
+Suku kata = 13,
+Jumlah keyword = 1,
+Jumlah slot = 3 ;
+Larik = [kalbu, dan, bayang, bisa, dibawa, menunggu],
+Suku kata = 13,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [senja, dan, kalbu, bisa, dibawa, pergi],
+Suku kata = 12,
+Jumlah keyword = 1,
+Jumlah slot = 3 ;
+Larik = [senja, dan, kalbu, bisa, dibawa, kembali],
+Suku kata = 13,
+Jumlah keyword = 1,
+Jumlah slot = 3 ;
+Larik = [senja, dan, kalbu, bisa, dibawa, menunggu],
+Suku kata = 13,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [senja, dan, senja, bisa, dibawa, pergi],
+Suku kata = 12,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [senja, dan, senja, bisa, dibawa, kembali],
+Suku kata = 13,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [senja, dan, senja, bisa, dibawa, menunggu],
+Suku kata = 13,
+Jumlah keyword = D,
+Jumlah slot = 3 ;
+Larik = [senja, dan, bayang, bisa, dibawa, pergi],
+Suku kata = 12,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [senja, dan, bayang, bisa, dibawa, kembali],
+Suku kata = 13,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [senja, dan, bayang, bisa, dibawa, menunggu],
+Suku kata = 13,
+Jumlah keyword = 3,
+Jumlah slot = 3 ;
+Larik = [bayang, dan, kalbu, bisa, dibawa, pergi],
+Suku kata = 12,
+Jumlah keyword = 1,
+Jumlah slot = 3 ;
+Larik = [bayang, dan, kalbu, bisa, dibawa, kembali],
+Suku kata = 13,
+Jumlah keyword = 1,
+Jumlah slot = 3 ;
+Larik = [bayang, dan, kalbu, bisa, dibawa, menunggu],
+Suku kata = 13,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [bayang, dan, senja, bisa, dibawa, pergi],
+Suku kata = 12,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [bayang, dan, senja, bisa, dibawa, kembali],
+Suku kata = 13,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [bayang, dan, senja, bisa, dibawa, menunggu],
+Suku kata = 13,
+Jumlah keyword = 3,
+Jumlah slot = 3 ;
+Larik = [bayang, dan, bayang, bisa, dibawa, pergi],
+Suku kata = 12,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [bayang, dan, bayang, bisa, dibawa, kembali],
+Suku kata = 13,
+Jumlah keyword = 2,
+Jumlah slot = 3 ;
+Larik = [bayang, dan, bayang, bisa, dibawa, menunggu],
+Suku kata = 13,
+Jumlah keyword = 3,
+Jumlah slot = 3 ;
+Larik = [aku, pergi, aku, pergi],
+Suku kata = 8,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [aku, pergi, aku, kembali],
+Suku kata = 9,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [aku, pergi, aku, menunggu],
+Suku kata = 9,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [aku, pergi, kau, pergi],
+Suku kata = 8,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [aku, pergi, kau, kembali],
+Suku kata = 9,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [aku, pergi, kau, menunggu],
+Suku kata = 9,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [aku, kembali, aku, pergi],
+Suku kata = 9,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [aku, kembali, aku, kembali],
+Suku kata = 10,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [aku, kembali, aku, menunggu],
+Suku kata = 10,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [aku, kembali, kau, pergi],
+Suku kata = 9,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [aku, kembali, kau, kembali],
+Suku kata = 10,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [aku, kembali, kau, menunggu],
+Suku kata = 10,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [aku, menunggu, aku, pergi],
+Suku kata = 9,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [aku, menunggu, aku, kembali],
+Suku kata = 10,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [aku, menunggu, aku, menunggu],
+Suku kata = 10,
+Jumlah keyword = 2,
+Jumlah slot = 4
+Larik = [aku, menunggu, kau, pergi],
+Suku kata = 9,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [aku, menunggu, kau, kembali],
+Suku kata = 10,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [aku, menunggu, kau, menunggu],
+Suku kata = 10,
+Jumlah keyword = 2,
+Jumlah slot = 4 ;
+Larik = [kau, pergi, aku, pergi],
+Suku kata = 8,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [kau, pergi, aku, kembali],
+Suku kata = 9,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [kau, pergi, aku, menunggu],
+Suku kata = 9,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [kau, pergi, kau, pergi],
+Suku kata = 8,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [kau, pergi, kau, kembali],
+Suku kata = 9,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [kau, pergi, kau, menunggu],
+Suku kata = 9,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [kau, kembali, aku, pergi],
+Suku kata = 9,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [kau, kembali, aku, kembali],
+Suku kata = 10,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [kau, kembali, aku, menunggu],
+Suku kata = 10,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [kau, kembali, kau, pergi],
+Suku kata = 9,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [kau, kembali, kau, kembali],
+Suku kata = 10,
+Jumlah keyword = 0,
+Jumlah slot = 4 ;
+Larik = [kau, kembali, kau, menunggu],
+Suku kata = 10,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [kau, menunggu, aku, pergi],
+Suku kata = 9,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [kau, menunggu, aku, kembali],
+Suku kata = 10,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [kau, menunggu, aku, menunggu],
+Suku kata = 10,
+Jumlah keyword = 2,
+Jumlah slot = 4 ;
+Larik = [kau, menunggu, kau, pergi],
+Suku kata = 9,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [kau, menunggu, kau, kembali],
+Suku kata = 10,
+Jumlah keyword = 1,
+Jumlah slot = 4 ;
+Larik = [kau, menunggu, kau, menunggu],
+Suku kata = 10,
+Jumlah keyword = 2,
+Jumlah slot = 4 ;
+
+SELECTION-POEM(S)
+X = [[senja, dan, senja, bisa, dibawa, pergi], [aku, menunggu, aku, kembali]] ;
+X = [[senja, dan, senja, bisa, dibawa, pergi], [aku, menunggu, kau, kembali]] ;
+X = [[senja, dan, senja, bisa, dibawa, pergi], [kau, menunggu, aku, kembali]] ;
+X = [[senja, dan, senja, bisa, dibawa, pergi], [kau, menunggu, kau, kembali]] ;
+X = [[senja, dan, bayang, bisa, dibawa, pergi], [aku, menunggu, aku, kembali]] ;
+X = [[senja, dan, bayang, bisa, dibawa, pergi], [aku, menunggu, kau, kembali]] ;
+X = [[senja, dan, bayang, bisa, dibawa, pergi], [kau, menunggu, aku, kembali]] ;
+X = [[senja, dan, bayang, bisa, dibawa, pergi], [kau, menunggu, kau, kembali]] ;
+X = [[bayang, dan, senja, bisa, dibawa, pergi], [aku, menunggu, aku, kembali]] ;
+X = [[bayang, dan, senja, bisa, dibawa, pergi], [aku, menunggu, kau, kembali]] ;
+X = [[bayang, dan, senja, bisa, dibawa, pergi], [kau, menunggu, aku, kembali]] ;
+X = [[bayang, dan, senja, bisa, dibawa, pergi], [kau, menunggu, kau, kembali]] ;
+X = [[bayang, dan, bayang, bisa, dibawa, pergi], [aku, menunggu, aku, kembali]] ;
+X = [[bayang, dan, bayang, bisa, dibawa, pergi], [aku, menunggu, kau, kembali]] ;
+X = [[bayang, dan, bayang, bisa, dibawa, pergi], [kau, menunggu, aku, kembali]] ;
+X = [[bayang, dan, bayang, bisa, dibawa, pergi], [kau, menunggu, kau, kembali]] ;

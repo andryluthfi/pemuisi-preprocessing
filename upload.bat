@@ -1,0 +1,1 @@
+curl -i -F filedata=@res-articleLink.txt http://localhost/pemuisi/API/poetry/push
